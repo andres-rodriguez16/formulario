@@ -1,12 +1,12 @@
 import React from 'react'
-import Label3 from './Label3'
-
+import Label3 from '../componentes/Label3'
+import "./Label2.css"
 
 const nivel1 = ["Informe", "Reporte"]
 const nivel2 = ["Dato", "Premisa"]
 const nivel3 = ["Justificación", "Encuesta"]
 
-function Label2({input, n1, n2}) {
+function Label2({input, n1, n2, n3}) {
   return (
     <div>
       <label for="N1">
@@ -39,7 +39,7 @@ function Label2({input, n1, n2}) {
             ) : null}
           </select>
         </label>
-        <Label3 input={input}></Label3>
+        <Label3 input={input} n3={n3}></Label3>
     </div>
   )
 }
